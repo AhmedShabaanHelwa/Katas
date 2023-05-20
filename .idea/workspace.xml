@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8e9e2b1-2a6c-4da0-826f-6b9954fa39eb" name="Changes" comment="" />
+    <list default="true" id="f8e9e2b1-2a6c-4da0-826f-6b9954fa39eb" name="Changes" comment="Refactoring - Add Parrot Kata">
+      <change beforePath="$PROJECT_DIR$/Refactoring/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Refactoring/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TDD/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TDD/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,9 +25,29 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "jdk.selected.JAVA_MODULE": "openjdk-20",
+    "last_opened_file_path": "C:/Users/ahmsha6r/IdeaProjects/Katas/Refactoring/src/test/java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.importing"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ahmsha6r\IdeaProjects\Katas\Refactoring\src\test\java" />
+      <recent name="C:\Users\ahmsha6r\IdeaProjects\Katas\Refactoring\src\main\java" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ahmsha6r\IdeaProjects\Katas\" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean install" />
+    </option>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -31,6 +57,53 @@
       <option name="presentableId" value="Default" />
       <updated>1684580483980</updated>
     </task>
+    <task id="LOCAL-00001" summary="Initialize project">
+      <created>1684581023065</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1684581023066</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Adding Refactoring module.">
+      <created>1684581070988</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1684581070988</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Adding TDD module.">
+      <created>1684581323157</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1684581323157</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Refactoring - Add Parrot Kata">
+      <created>1684582100847</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1684582100847</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initialize project" />
+    <MESSAGE value="Adding Refactoring module." />
+    <MESSAGE value="Adding TDD module." />
+    <MESSAGE value="Refactoring - Add Parrot Kata" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactoring - Add Parrot Kata" />
   </component>
 </project>
