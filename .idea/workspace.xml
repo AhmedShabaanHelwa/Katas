@@ -4,17 +4,42 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8e9e2b1-2a6c-4da0-826f-6b9954fa39eb" name="Changes" comment="Refactoring - Add Parrot Kata">
-      <change beforePath="$PROJECT_DIR$/Refactoring/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Refactoring/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TDD/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TDD/pom.xml" afterDir="false" />
+    <list default="true" id="f8e9e2b1-2a6c-4da0-826f-6b9954fa39eb" name="Changes" comment="Refactoring - The Parrot Kata - 8.2 Cleanup voltage and isNailed fields, getSpeed() abstract and surprisingly remove getType()!">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Refactoring/src/main/java/parrot/AfricanParrot.java" beforeDir="false" afterPath="$PROJECT_DIR$/Refactoring/src/main/java/parrot/AfricanParrot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Refactoring/src/main/java/parrot/EuropeanParrot.java" beforeDir="false" afterPath="$PROJECT_DIR$/Refactoring/src/main/java/parrot/EuropeanParrot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Refactoring/src/main/java/parrot/ParrotFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/Refactoring/src/main/java/parrot/ParrotFactory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitRewordedCommitMessages">
+    <option name="commitMessagesMapping">
+      <RewordedCommitMessageMapping>
+        <option name="originalMessage" value="Refactoring - The Parrot Kata - 8.1 Override the method in NorwegianBlueParrot to replace the original getSpeed() and push the needed members down." />
+        <option name="rewordedMessage" value="Refactoring - The Parrot Kata - 8.1 Override the method in NorwegianBlueParrot to replace the original getSpeed() and push the needed members down." />
+      </RewordedCommitMessageMapping>
+    </option>
+    <option name="currentCommit" value="1" />
+    <option name="onto" value="2de0977a008b88ab6eae78fcd33e1b237c3eb265" />
+  </component>
+  <component name="OptimizeOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
   </component>
   <component name="ProjectId" id="2Q3RsMgUtSNPghAspdLzWVIi4L1" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -22,19 +47,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "jdk.selected.JAVA_MODULE": "openjdk-20",
-    "last_opened_file_path": "C:/Users/ahmsha6r/IdeaProjects/Katas/Refactoring/src/test/java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.importing"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-20&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ahmsha6r/IdeaProjects/Katas/Refactoring/src/test/java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;rearrange.code.on.save&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;actions.on.save&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="parrot" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\ahmsha6r\IdeaProjects\Katas\Refactoring\src\test\java" />
       <recent name="C:\Users\ahmsha6r\IdeaProjects\Katas\Refactoring\src\main\java" />
@@ -47,6 +76,52 @@
     <option name="myCommands">
       <command value="mvn clean install" />
     </option>
+  </component>
+  <component name="RunManager" selected="JUnit.parrot in Refactoring">
+    <configuration name="ParrotTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Refactoring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="parrot.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="parrot" />
+      <option name="MAIN_CLASS_NAME" value="parrot.ParrotTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="java in Refactoring" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Refactoring" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/Refactoring/src/test/java" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="parrot in Refactoring" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Refactoring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="parrot.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="parrot" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.parrot in Refactoring" />
+        <item itemvalue="JUnit.ParrotTest" />
+        <item itemvalue="JUnit.java in Refactoring" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -85,7 +160,154 @@
       <option name="project" value="LOCAL" />
       <updated>1684582100847</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Refactoring - The Parrot Kata - 1. Separate creation of parrots from the Parrot class.">
+      <created>1684585261381</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1684585261381</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Refactoring - The Parrot Kata - 2. Move simple parrot factory into a separate factory class.">
+      <created>1684585493475</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1684585493475</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Refactoring - The Parrot Kata - 3. Encapsulate type filed to give the subclasses the ability to provide their type.">
+      <created>1684585949637</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1684585949637</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Refactoring - The Parrot Kata - 4. Extract subclasses - 4.1 Extract EuropeanParrot and add it to the ParrotFactory.">
+      <created>1684586834324</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1684586834324</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Refactoring - The Parrot Kata - 4. Extract subclasses - 4.2 Extract AfricanParrot and add it to the ParrotFactory.">
+      <created>1684587038343</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1684587038343</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Refactoring - The Parrot Kata - 4. Extract subclasses - 4.3 Extract NorwegianBlueParrot and add it to the ParrotFactory.">
+      <created>1684587206384</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1684587206384</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Refactoring - The Parrot Kata - 5. Provide type through subclasses and abstract the base class.">
+      <created>1684594389027</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1684594389027</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Refactoring - The Parrot Kata - 5.1 Cleanup type field after abstracting the base type.">
+      <created>1684594440551</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1684594440551</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Refactoring - The Parrot Kata - 5.2 Quick Refactor: Introduce BASE_SPEED constant.">
+      <created>1684594651938</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1684594651938</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Refactoring - The Parrot Kata - 5.2 Quick Refactor: Introduce LOAD_FACTOR constant.">
+      <created>1684594709847</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1684594709847</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Refactoring - The Parrot Kata - 5.3 Quick Refactor: Introduce MAX_BASE_SPEED constant.">
+      <created>1684594899068</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1684594899068</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Refactoring - The Parrot Kata - Fix typo in EuropeanParrot.">
+      <created>1684595816196</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1684595816196</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Refactoring - The Parrot Kata - Fix typo in EuropeanParrot.">
+      <created>1684595830161</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1684595830161</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Refactoring - The Parrot Kata - 6 - Replace conditional by polymorphism - 6.2 Remove European case in base getSpeed() due to polymorphism replacement.">
+      <created>1684595940087</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1684595940087</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Refactoring - The Parrot Kata - 7 - Override the method in AfricanParrot to replace the original getSpeed() and push the needed members down.">
+      <created>1684596618536</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1684596618536</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Refactoring - The Parrot Kata - 7 - Replace conditional by polymorphism - 6.2 Remove African case in base getSpeed() due to polymorphism replacement.">
+      <created>1684596663630</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1684596663630</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Refactoring - The Parrot Kata - 7 - Replace conditional by polymorphism - 7.3 Cleanup numberOfCoconuts field.">
+      <created>1684596808200</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1684596808200</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Refactoring - The Parrot Kata - 8.1 Override the method in NorwegianBlueParrot to replace the original getSpeed() and push the needed members down.">
+      <created>1684597380018</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1684597380018</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Refactoring - The Parrot Kata - 8.1 Override the method in NorwegianBlueParrot to replace the original getSpeed() and push the needed members down.">
+      <created>1684597410467</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1684597410467</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Refactoring - The Parrot Kata - 8.2 Remove African case in base getSpeed() due to polymorphism replacement.">
+      <created>1684597492361</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1684597492361</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Refactoring - The Parrot Kata - 8.2 Cleanup voltage and isNailed fields, getSpeed() abstract and surprisingly remove getType()!">
+      <created>1684597784668</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1684597784668</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -104,6 +326,29 @@
     <MESSAGE value="Adding Refactoring module." />
     <MESSAGE value="Adding TDD module." />
     <MESSAGE value="Refactoring - Add Parrot Kata" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactoring - Add Parrot Kata" />
+    <MESSAGE value="Refactoring - The Parrot Kata - 1. Separate creation of parrots from the Parrot class." />
+    <MESSAGE value="Refactoring - The Parrot Kata - 2. Move simple parrot factory into a separate factory class." />
+    <MESSAGE value="Refactoring - The Parrot Kata - 3. Encapsulate type filed to give the subclasses the ability to provide their type." />
+    <MESSAGE value="Refactoring - The Parrot Kata - 4. Extract subclasses - 4.1 Extract EuropeanParrot and add it to the ParrotFactory." />
+    <MESSAGE value="Refactoring - The Parrot Kata - 4. Extract subclasses - 4.2 Extract AfricanParrot and add it to the ParrotFactory." />
+    <MESSAGE value="Refactoring - The Parrot Kata - 4. Extract subclasses - 4.3 Extract NorwegianBlueParrot and add it to the ParrotFactory." />
+    <MESSAGE value="Refactoring - The Parrot Kata - 5. Provide type through subclasses and abstract the base class." />
+    <MESSAGE value="Refactoring - The Parrot Kata - 5.1 Cleanup type field after abstracting the base type." />
+    <MESSAGE value="Refactoring - The Parrot Kata - 5.2 Quick Refactor: Introduce BASE_SPEED constant." />
+    <MESSAGE value="Refactoring - The Parrot Kata - 5.2 Quick Refactor: Introduce LOAD_FACTOR constant." />
+    <MESSAGE value="Refactoring - The Parrot Kata - 5.3 Quick Refactor: Introduce MAX_BASE_SPEED constant." />
+    <MESSAGE value="Refactoring - The Parrot Kata - 6 - Override the method in subtype to replace the original getSpeed(), and fix a typo in EuropeanParrot class name." />
+    <MESSAGE value="Refactoring - The Parrot Kata - 6 - Replace conditional by polymorphism - 6.2 Remove European case in base getSpeed() due to polymorphism replacement." />
+    <MESSAGE value="Refactoring - The Parrot Kata - 7 - Override the method in AfricanParrot to replace the original getSpeed() and push the needed members down." />
+    <MESSAGE value="Refactoring - The Parrot Kata - 7 - Replace conditional by polymorphism - 7.2 Remove African case in base getSpeed() due to polymorphism replacement." />
+    <MESSAGE value="Refactoring - The Parrot Kata - 7 - Replace conditional by polymorphism - 7.3 Cleanup numberOfCoconuts field." />
+    <MESSAGE value="Refactoring - The Parrot Kata - 8.1 Override the method in NorwegianBlueParrot to replace the original getSpeed() and push the needed members down." />
+    <MESSAGE value="Refactoring - The Parrot Kata - 8.2 Remove African case in base getSpeed() due to polymorphism replacement." />
+    <MESSAGE value="Refactoring - The Parrot Kata - 8.2 Cleanup voltage and isNailed fields, getSpeed() abstract and surprisingly remove getType()!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactoring - The Parrot Kata - 8.2 Cleanup voltage and isNailed fields, getSpeed() abstract and surprisingly remove getType()!" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

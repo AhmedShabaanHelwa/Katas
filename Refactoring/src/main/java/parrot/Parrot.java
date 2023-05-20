@@ -4,18 +4,10 @@ public abstract class Parrot {
 
     private static final double BASE_SPEED = 12.0;
 
-    public Parrot(double voltage, boolean isNailed) {
-        this.voltage = voltage;
-        this.isNailed = isNailed;
+    public Parrot() {
     }
 
-    public double getSpeed() {
-        return switch (getType()) {
-            default -> throw new IllegalArgumentException("Invalid type of Parrot");
-        };
-    }
-
-    public abstract ParrotTypeEnum getType();
+    public abstract double getSpeed();
 
     protected double getBaseSpeed() {
         return BASE_SPEED;

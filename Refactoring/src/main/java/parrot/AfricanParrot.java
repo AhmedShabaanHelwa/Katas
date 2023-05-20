@@ -4,14 +4,9 @@ public class AfricanParrot extends Parrot {
     private static final double LOAD_FACTOR = 9.0;
     private final int numberOfCoconuts;
 
-    public AfricanParrot(int numberOfCoconuts, double voltage, boolean isNailed) {
-        super(voltage, isNailed);
+    public AfricanParrot(int numberOfCoconuts) {
+        super();
         this.numberOfCoconuts = numberOfCoconuts;
-    }
-
-    @Override
-    public ParrotTypeEnum getType() {
-        return ParrotTypeEnum.AFRICAN;
     }
 
     @Override
