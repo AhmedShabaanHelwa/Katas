@@ -11,7 +11,6 @@ public abstract class Parrot {
 
     public double getSpeed() {
         return switch (getType()) {
-            case NORWEGIAN_BLUE -> (isNailed) ? 0 : getBaseSpeed(voltage);
             default -> throw new IllegalArgumentException("Invalid type of Parrot");
         };
     }
