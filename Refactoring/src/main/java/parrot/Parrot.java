@@ -17,9 +17,9 @@ public abstract class Parrot {
 
     public double getSpeed() {
         return switch (getType()) {
-            case EUROPEAN -> getBaseSpeed();
             case AFRICAN -> Math.max(0, getBaseSpeed() - getLoadFactor() * numberOfCoconuts);
             case NORWEGIAN_BLUE -> (isNailed) ? 0 : getBaseSpeed(voltage);
+            default -> throw new IllegalArgumentException("Invalid type of Parrot");
         };
     }
 
@@ -33,7 +33,7 @@ public abstract class Parrot {
         return LOAD_FACTOR;
     }
 
-    private double getBaseSpeed() {
+    protected double getBaseSpeed() {
         return BASE_SPEED;
     }
 }
