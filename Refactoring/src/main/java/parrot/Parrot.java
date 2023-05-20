@@ -7,6 +7,10 @@ public class Parrot {
     private final double voltage;
     private final boolean isNailed;
 
+    public static Parrot create(ParrotTypeEnum type, int numberOfCoconuts, double voltage, boolean isNailed) {
+        return new Parrot(type, numberOfCoconuts, voltage, isNailed);
+    }
+
     public Parrot(ParrotTypeEnum type, int numberOfCoconuts, double voltage, boolean isNailed) {
         this.type = type;
         this.numberOfCoconuts = numberOfCoconuts;
