@@ -3,6 +3,7 @@ package parrot;
 public abstract class Parrot {
 
     private static final double BASE_SPEED = 12.0;
+    public static final double LOAD_FACTOR = 9.0;
     private final int numberOfCoconuts;
     private final double voltage;
     private final boolean isNailed;
@@ -28,7 +29,7 @@ public abstract class Parrot {
     }
 
     private double getLoadFactor() {
-        return 9.0;
+        return LOAD_FACTOR;
     }
 
     private double getBaseSpeed() {
