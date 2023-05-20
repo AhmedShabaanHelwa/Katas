@@ -4,4 +4,9 @@ public class EruopeanParrot extends Parrot {
     public EruopeanParrot(ParrotTypeEnum type, int numberOfCoconuts, double voltage, boolean isNailed) {
         super(type, numberOfCoconuts, voltage, isNailed);
     }
+
+    @Override
+    public ParrotTypeEnum getType() {
+        return ParrotTypeEnum.EUROPEAN;
+    }
 }
