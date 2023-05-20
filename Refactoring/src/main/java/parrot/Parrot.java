@@ -14,8 +14,12 @@ public class Parrot {
         this.isNailed = isNailed;
     }
 
+    public ParrotTypeEnum getType() {
+        return type;
+    }
+
     public double getSpeed() {
-        return switch (type) {
+        return switch (getType()) {
             case EUROPEAN -> getBaseSpeed();
             case AFRICAN -> Math.max(0, getBaseSpeed() - getLoadFactor() * numberOfCoconuts);
             case NORWEGIAN_BLUE -> (isNailed) ? 0 : getBaseSpeed(voltage);
@@ -33,5 +37,4 @@ public class Parrot {
     private double getBaseSpeed() {
         return 12.0;
     }
-
 }
